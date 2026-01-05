@@ -58,7 +58,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6"
             >
               <Sparkles className="w-4 h-4" />
-              Transforming Businesses Since 2014
+              
             </motion.div>
 
             {/* Heading */}
@@ -80,6 +80,24 @@ export default function HeroSection() {
               who understand your vision.
             </p>
 
+            {/* Service Navigation Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+              <Link
+                to={createPageUrl('DigitalMarketing')}
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-900 to-blue-800 text-white font-semibold rounded-xl shadow-lg shadow-blue-900/30 hover:shadow-blue-900/50 hover:from-blue-800 hover:to-blue-700 hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <span>Digital Marketing</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                to={createPageUrl('TechnicalSolutions')}
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-900 font-semibold rounded-xl border-2 border-blue-900 hover:bg-blue-900 hover:text-white shadow-lg hover:shadow-blue-900/30 transition-all duration-300"
+              >
+                <span>Technical Solutions</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+
             {/* Features */}
             <div className="flex flex-wrap gap-4 mb-10">
               {features.map((feature) => (
@@ -90,20 +108,20 @@ export default function HeroSection() {
               ))}
             </div>
 
-            {/* CTAs */}
+            {/* Bottom CTAs */}
             <div className="flex flex-wrap gap-4">
               <Link
                 to={createPageUrl('Contact')}
-                className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-900 to-blue-800 text-white font-semibold rounded-xl shadow-lg shadow-blue-900/30 hover:shadow-blue-900/50 hover:-translate-y-0.5 transition-all duration-300"
+                className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-400 text-white font-semibold rounded-xl shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-0.5 transition-all duration-300"
               >
-                Grow Your Business
+                Get Free Consultation
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
-                to={createPageUrl('Contact')}
-                className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-900 font-semibold rounded-xl border-2 border-slate-200 hover:border-orange-500 hover:text-orange-500 transition-all duration-300"
+                to={createPageUrl('About')}
+                className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-900 font-semibold rounded-xl border-2 border-slate-200 hover:border-slate-900 hover:text-slate-900 transition-all duration-300"
               >
-                Contact Us
+                Learn More About Us
               </Link>
             </div>
           </motion.div>

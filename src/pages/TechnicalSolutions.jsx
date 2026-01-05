@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { motion } from 'framer-motion';
+import TechnologiesTabs from '@/components/sections/TechnologiesTabs';
 import { 
   Code, ShoppingCart, Smartphone, Palette, Settings, Wrench,
   ArrowRight, CheckCircle, Cpu, Database, Cloud, Shield,
@@ -30,7 +31,7 @@ export default function TechnicalSolutions() {
       icon: Smartphone,
       title: 'Mobile App Development',
       description: 'Native and cross-platform mobile apps that deliver exceptional user experiences. From concept to App Store launch.',
-      technologies: ['React Native', 'Flutter', 'iOS Swift', 'Android Kotlin'],
+      technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'iOS', 'Android', 'Ionic App', 'Xamarin'],
       gradient: 'from-violet-500 to-violet-600',
       features: ['Cross-Platform', 'Native Performance', 'Push Notifications', 'Offline Support'],
     },
@@ -119,30 +120,11 @@ export default function TechnicalSolutions() {
         </div>
       </section>
 
-      {/* Tech Stack */}
-      <section className="py-12 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6">
-          <p className="text-center text-slate-500 mb-8">Technologies We Master</p>
-          <div className="flex flex-wrap justify-center gap-8 lg:gap-12">
-            {techStack.map((tech, index) => (
-              <motion.div
-                key={tech.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="flex items-center gap-2 text-slate-700"
-              >
-                <tech.icon className="w-6 h-6 text-blue-600" />
-                <span className="font-medium">{tech.name}</span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Technologies & Platforms Tab Section */}
+      <TechnologiesTabs />
 
       {/* Services Section */}
-      <section className="py-20 lg:py-28 bg-gradient-to-b from-white to-slate-50">
+      <section className="pt-0 pb-20 lg:pt-0 lg:pb-28 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
