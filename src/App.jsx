@@ -1,12 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './Layout';
-import Home from './pages/Home';
-import DigitalMarketing from './pages/DigitalMarketing';
-import TechnicalSolutions from './pages/TechnicalSolutions';
-import About from './pages/About';
-import Contact from './pages/Contact';
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
 
-function App() {
+import Home from "./pages/Home";
+import DigitalMarketing from "./pages/DigitalMarketing";
+import TechnicalSolutions from "./pages/TechnicalSolutions";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
+export default function App() {
   return (
     <Router>
       <Layout>
@@ -21,5 +23,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

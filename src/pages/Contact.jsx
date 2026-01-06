@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ContactForm from "@/components/forms/ContactForm";
+import ContactNumberBrand from "@/components/ContactNumberBrand";
+
 import {
   Phone,
   Mail,
@@ -92,6 +94,9 @@ export default function Contact() {
                 Have a project in mind? We'd love to hear about it. Reach out
                 and let's discuss how we can help transform your business.
               </p>
+              <div className="mt-10 flex justify-center">
+                <ContactNumberBrand />
+              </div>
             </motion.div>
           </div>
         </div>
