@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-                <img src="/public/vite.png" alt="AAIWAA Logo" className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow" />
+                <img src="/vite.png" alt="AAIWAA Logo" className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow" />
               </div>
               <div>
                 <h2 className="text-xl font-bold">AAIWAA</h2>
