@@ -70,11 +70,8 @@ export default function Navbar() {
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-3 group">
               <div className="relative">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow">
-                  <span className="text-white font-bold text-xl">A</span>
-                </div>
-                <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-gradient-to-r from-orange-500 to-orange-400 border-2 border-white" />
-              </div>
+              <img src="/src/assets/logo.png" alt="AAIWAA Logo" className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow" />
+                             </div>
               <div className="hidden sm:block">
                 <h1 className="text-xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
                   AAIWAA

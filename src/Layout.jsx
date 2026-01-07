@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-      <div className="pt-24">
+      <div>
         <Footer />
       </div>
     </div>

@@ -36,7 +36,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-white">
       {/* CTA Section */}
-      <div className="max-w-7xl mx-auto px-4 lg:px-6 -mt-24 relative z-10">
+      {/* <div className="max-w-7xl mx-auto px-4 lg:px-6 -mt-24 relative z-10">
         <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 rounded-3xl p-8 lg:p-12 shadow-2xl shadow-blue-900/50">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div>
@@ -56,7 +56,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 lg:px-6 pt-32 pb-12">
@@ -64,8 +64,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">A</span>
+              <div className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                <img src="/src/assets/logo.png" alt="AAIWAA Logo" className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow" />
               </div>
               <div>
                 <h2 className="text-xl font-bold">AAIWAA</h2>
