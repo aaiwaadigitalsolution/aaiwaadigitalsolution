@@ -35,29 +35,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-white">
-      {/* CTA Section */}
-      {/* <div className="max-w-7xl mx-auto px-4 lg:px-6 -mt-24 relative z-10">
-        <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 rounded-3xl p-8 lg:p-12 shadow-2xl shadow-blue-900/50">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div>
-              <h3 className="text-2xl lg:text-3xl font-bold mb-2">
-                Ready to Transform Your Business?
-              </h3>
-              <p className="text-blue-200">
-                Let's discuss how we can help you achieve your digital goals.
-              </p>
-            </div>
-            <Link
-              to={createPageUrl('Contact')}
-              className="group flex items-center gap-2 px-8 py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-orange-500 hover:text-white transition-all duration-300 shadow-lg"
-            >
-              Start Your Project
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
-        </div>
-      </div> */}
-
+      
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 lg:px-6 pt-32 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
@@ -65,7 +43,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-                <img src="/src/assets/logo.png" alt="AAIWAA Logo" className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow" />
+                <img src="/public/logo.png" alt="AAIWAA Logo" className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow" />
               </div>
               <div>
                 <h2 className="text-xl font-bold">AAIWAA</h2>
