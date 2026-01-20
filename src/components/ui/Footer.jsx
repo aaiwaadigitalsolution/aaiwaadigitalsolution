@@ -27,15 +27,22 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    // { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    // { icon: Twitter, href: '#', label: 'Twitter' },
+    {
+      icon: Facebook,
+      href: "https://www.facebook.com/profile.php?id=61586364833341",
+      label: "Facebook",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/aaiwaadigital/",
+      label: "Instagram",
+    },
   ];
 
   return (
     <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-white">
-      
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 lg:px-6 pt-32 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
@@ -43,16 +50,23 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-                <img src="/vite.png" alt="AAIWAA Logo" className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow" />
+                <img
+                  src="/vite.png"
+                  alt="AAIWAA Logo"
+                  className="w-12 h-12 rounded-[30px] bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-900/30 group-hover:shadow-blue-900/50 transition-shadow"
+                />
               </div>
               <div>
                 <h2 className="text-xl font-bold">AAIWAA</h2>
-                <p className="text-[10px] tracking-[0.2em] text-slate-400">DIGITAL SOLUTION</p>
+                <p className="text-[10px] tracking-[0.2em] text-slate-400">
+                  DIGITAL SOLUTION
+                </p>
               </div>
             </div>
             <p className="text-slate-400 leading-relaxed mb-6">
-              Your trusted partner for digital marketing excellence and cutting-edge technical solutions. 
-              We transform businesses through innovation and strategic digital expertise.
+              Your trusted partner for digital marketing excellence and
+              cutting-edge technical solutions. We transform businesses through
+              innovation and strategic digital expertise.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -118,18 +132,24 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+919876543210" className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors">
+                <a
+                  href="tel:+919876543210"
+                  className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors"
+                >
                   <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center flex-shrink-0">
                     <Phone className="w-5 h-5 text-orange-500" />
                   </div>
                   <div>
                     <p className="text-sm text-slate-500">Call Us</p>
-                    <p className="font-medium text-white">+91 98765 43210</p>
+                    <p className="font-medium text-white">+91 7096224922</p>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="mailto:info@aaiwaa.com" className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors">
+                <a
+                  href="mailto:info@aaiwaa.com"
+                  className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors"
+                >
                   <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-orange-500" />
                   </div>
@@ -146,7 +166,11 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-500">Visit Us</p>
-                    <p className="font-medium text-white">614 , MBC , Mota Varachhak<br />Surat , Gujarat, India 394101</p>
+                    <p className="font-medium text-white">
+                      614 , MBC , Mota Varachhak
+                      <br />
+                      Surat , Gujarat, India 394101
+                    </p>
                   </div>
                 </div>
               </li>
@@ -163,9 +187,15 @@ export default function Footer() {
               © {currentYear} AAIWAA Digital Solution. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-slate-500">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              <a href="#" className="hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>
