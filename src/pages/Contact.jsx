@@ -20,8 +20,8 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 98765 43210", "+91 12345 67890"],
-      action: "tel:+919876543210",
+      details: ["+91 70962 24922"],
+      action: "tel:+917096224922",
     },
     {
       icon: Mail,
@@ -32,9 +32,20 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Office",
-      details: ["614 , MBC , Mota Varachha", "Surat , Gujarat India 394101"],
+      details: [
+        { type: "heading", text: "BRANCH 1 (MAIN BRANCH)" },
+        { type: "text", text: "614 , MBC , Mota Varachha" },
+        { type: "text", text: "Surat , Gujarat India 394101" },
+        { type: "space" },
+        { type: "heading", text: "BRANCH 2" },
+        {
+          type: "text",
+          text: "6th floor, office no 11, AL Abbas Building 2, Bur Dubai - Dubai",
+        },
+      ],
       action: null,
     },
+
     {
       icon: Clock,
       title: "Business Hours",
@@ -44,22 +55,22 @@ export default function Contact() {
   ];
 
   const socialLinks = [
-    {
-      icon: Linkedin,
-      href: "#",
-      label: "LinkedIn",
-      color: "hover:bg-blue-600",
-    },
-    { icon: Twitter, href: "#", label: "Twitter", color: "hover:bg-sky-500" },
+    // {
+    //   icon: Linkedin,
+    //   href: "#",
+    //   label: "LinkedIn",
+    //   color: "hover:bg-blue-600",
+    // },
+    // { icon: Twitter, href: "#", label: "Twitter", color: "hover:bg-sky-500" },
     {
       icon: Facebook,
-      href: "#",
+      href: "https://www.facebook.com/profile.php?id=61586364833341",
       label: "Facebook",
       color: "hover:bg-blue-700",
     },
     {
       icon: Instagram,
-      href: "#",
+      href: "https://www.instagram.com/aaiwaadigital/",
       label: "Instagram",
       color: "hover:bg-pink-600",
     },
@@ -94,7 +105,7 @@ export default function Contact() {
                 Have a project in mind? We'd love to hear about it. Reach out
                 and let's discuss how we can help transform your business.
               </p>
-              <div className="mt-10 flex justify-center">
+              <div className="mt-8 flex justify-center">
                 <ContactNumberBrand />
               </div>
             </motion.div>
@@ -105,7 +116,7 @@ export default function Contact() {
       {/* Contact Section */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
-          <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
+          <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
             {/* Contact Info */}
             <div className="lg:col-span-2 space-y-8">
               <motion.div
@@ -139,8 +150,30 @@ export default function Contact() {
                       <h3 className="font-semibold text-slate-900 mb-1">
                         {item.title}
                       </h3>
-                      {item.details.map((detail, i) =>
-                        item.action ? (
+                      {item.details.map((detail, i) => {
+                        // Office details object format handle
+                        if (typeof detail === "object") {
+                          if (detail.type === "space") {
+                            return <div key={i} className="h-2" />;
+                          }
+
+                          if (detail.type === "heading") {
+                            return (
+                              <p key={i} className="font-bold text-slate-900">
+                                {detail.text}
+                              </p>
+                            );
+                          }
+
+                          return (
+                            <p key={i} className="text-slate-600">
+                              {detail.text}
+                            </p>
+                          );
+                        }
+
+                        // Normal string format (other fields)
+                        return item.action ? (
                           <a
                             key={i}
                             href={item.action}
@@ -152,42 +185,53 @@ export default function Contact() {
                           <p key={i} className="text-slate-600">
                             {detail}
                           </p>
-                        )
-                      )}
+                        );
+                      })}
                     </div>
                   </motion.div>
                 ))}
               </div>
 
               {/* Social Links */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-                className="pt-8 border-t border-slate-200"
-              >
-                <h3 className="font-semibold text-slate-900 mb-4">Follow Us</h3>
-                <div className="flex gap-3">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      aria-label={social.label}
-                      className={`w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center transition-all duration-300 ${social.color} hover:text-white`}
-                    >
-                      <social.icon className="w-5 h-5" />
-                    </a>
-                  ))}
-                </div>
-              </motion.div>
             </div>
 
             {/* Contact Form */}
-            <div className="lg:col-span-3">
+          
+            <div className="lg:col-span-3 self-start lg:sticky lg:top-24">
               <ContactForm />
             </div>
           </div>
+
+          {/* Social Links - Center Full Width */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="mt-10 flex flex-col items-center"
+          >
+            {/* LINE HERE */}
+            <div className="w-full max-w-7xl border-t border-slate-200 mb-6"></div>
+
+            <h3 className="font-semibold text-slate-900 mb-4 text-center">
+              Follow Us
+            </h3>
+
+            <div className="flex justify-center gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-14 h-14 rounded-2xl bg-slate-100 flex items-center justify-center transition-all duration-300 ${social.color} hover:text-white`}
+                >
+                  <social.icon className="w-7 h-7" />
+                </a>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
