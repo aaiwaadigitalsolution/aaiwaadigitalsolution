@@ -55,12 +55,12 @@ export default function Contact() {
   ];
 
   const socialLinks = [
-    // {
-    //   icon: Linkedin,
-    //   href: "#",
-    //   label: "LinkedIn",
-    //   color: "hover:bg-blue-600",
-    // },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/aaiwaa-digital-solution/",
+      label: "LinkedIn",
+      color: "hover:bg-blue-600",
+    },
     // { icon: Twitter, href: "#", label: "Twitter", color: "hover:bg-sky-500" },
     {
       icon: Facebook,

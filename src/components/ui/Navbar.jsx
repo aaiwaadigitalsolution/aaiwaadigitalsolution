@@ -55,7 +55,12 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <span className="text-slate-400">Follow us:</span>
             <div className="flex gap-3">
-              
+              <a
+                href="https://www.linkedin.com/company/aaiwaa-digital-solution/"
+                className="hover:text-orange-400 transition-colors"
+              >
+                LinkedIn
+              </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61586364833341"
                 className="hover:text-orange-400 transition-colors"

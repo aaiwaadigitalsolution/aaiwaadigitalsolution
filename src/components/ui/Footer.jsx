@@ -27,7 +27,11 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    // { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/aaiwaa-digital-solution/",
+      label: "LinkedIn",
+    },
     // { icon: Twitter, href: '#', label: 'Twitter' },
     {
       icon: Facebook,
