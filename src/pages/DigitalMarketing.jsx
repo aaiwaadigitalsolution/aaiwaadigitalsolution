@@ -124,7 +124,7 @@ export default function DigitalMarketing() {
         </div>
       </section>
 
-      Stats Section
+    
       <section className="py-16 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
