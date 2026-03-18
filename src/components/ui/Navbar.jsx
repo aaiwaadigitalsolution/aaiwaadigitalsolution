@@ -38,11 +38,11 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
             <a
-              href="mailto:info@aaiwaa.com"
+              href="mailto:support@aaiwaa.com"
               className="flex items-center gap-2 hover:text-orange-400 transition-colors"
             >
               <Mail className="w-4 h-4" />
-              info@aaiwaa.com
+              support@aaiwaa.com
             </a>
             <a
               href="tel:+919876543210"

@@ -151,7 +151,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@aaiwaa.com"
+                  href="mailto:support@aaiwaa.com"
                   className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors"
                 >
                   <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center flex-shrink-0">
@@ -159,7 +159,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-500">Email Us</p>
-                    <p className="font-medium text-white">info@aaiwaa.com</p>
+                    <p className="font-medium text-white">support@aaiwaa.com</p>
                   </div>
                 </a>
               </li>

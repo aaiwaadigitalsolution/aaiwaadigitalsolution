@@ -26,8 +26,8 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      details: ["info@aaiwaa.com", "support@aaiwaa.com"],
-      action: "mailto:info@aaiwaa.com",
+      details: ["support@aaiwaa.com", "support@aaiwaa.com"],
+      action: "mailto:support@aaiwaa.com",
     },
     {
       icon: MapPin,
