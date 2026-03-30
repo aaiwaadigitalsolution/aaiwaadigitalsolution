@@ -26,7 +26,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      details: ["support@aaiwaa.com", "support@aaiwaa.com"],
+      details: ["support@aaiwaa.com"],
       action: "mailto:support@aaiwaa.com",
     },
     {
