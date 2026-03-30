@@ -33,15 +33,20 @@ export default function Contact() {
       icon: MapPin,
       title: "Office",
       details: [
-        { type: "heading", text: "BRANCH 1 (MAIN BRANCH)" },
-        { type: "text", text: "614 , MBC , Mota Varachha" },
-        { type: "text", text: "Surat , Gujarat India 394101" },
-        { type: "space" },
-        { type: "heading", text: "BRANCH 2" },
+        { type: "heading", text: "BRANCH 1 " },
         {
           type: "text",
-          text: "6th floor, office no 11, AL Abbas Building 2, Bur Dubai - Dubai",
+          text: "B-block , 5th floor , office no  03 ,",
         },
+        {
+          type: "text",
+          text: "AL Abbas Building 2 , Bur Dubai - Dubai",
+        },
+        { type: "space" },
+        { type: "heading", text: "BRANCH 2" },
+
+        { type: "text", text: "614 , MBC , Mota Varachha" },
+        { type: "text", text: "Surat , Gujarat India 394101" },
       ],
       action: null,
     },
